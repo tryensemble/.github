@@ -6,7 +6,7 @@
 
 ### What you get
 
-- **A machine per thread.** Every thread runs in a Firecracker microVM with its own Docker, database and `localhost:3000`. No worktrees, no clashes.
+- **A machine per thread.** Every thread runs in a microVM with its own Docker, database and `localhost:3000`. No worktrees, no clashes.
 - **The agent does the setup.** It installs what the project needs and writes it into `ensemble.toml`, so the next thread starts ready. Dev servers start on their own.
 - **Keys stay out of the machine.** Agents get placeholders; the host fills in your real tokens on the way out.
 - **Agents get helpers.** An agent can start its own helper threads and to-dos, and they report back.
